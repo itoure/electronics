@@ -14,6 +14,7 @@ GET /api/v1/products/{product_id}
 
 - create product
 POST /api/v1/products
+Params:
 {name,
 sku,
 quantity,
@@ -22,6 +23,7 @@ category}
 
 - update product
 POST /api/v1/products/{product_id}
+Params:
 {name,
 sku,
 quantity,

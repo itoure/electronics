@@ -1,0 +1,38 @@
+AppBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ProductRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    manyToOne:
+        category:
+            targetEntity: Category
+            inversedBy: product
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+    fields:
+        name:
+            type: string
+            length: '100'
+        sku:
+            type: string
+            length: '5'
+            unique: true
+        price:
+            type: decimal
+            precision: 10
+            scale: 2
+        quantity:
+            type: integer
+        created_at:
+            type: string
+            length: '12'
+        modified_at:
+            type: string
+            length: '12'
+    lifecycleCallbacks: {  }

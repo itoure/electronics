@@ -1,0 +1,16 @@
+
+list:
+    path:     /list
+    defaults: { _controller: AppBundle:Products:list }
+
+create:
+    path:     /create
+    defaults: { _controller: AppBundle:Products:create }
+
+update:
+    path:     /update
+    defaults: { _controller: AppBundle:Products:update }
+
+delete:
+    path:     /delete
+    defaults: { _controller: AppBundle:Products:delete }

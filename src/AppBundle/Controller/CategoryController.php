@@ -25,6 +25,4 @@ class CategoryController extends Controller
             return $this->json($this->utils->error($e->getMessage()));
         }
     }
-
-
 }
